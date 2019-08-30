@@ -1,0 +1,30 @@
+.gridPower {
+    width: 350px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 6;
+    grid-template-areas: "st p"
+                        "st p"
+                        "st p"
+                        "st p"
+                        "st p"
+                        "st p";   
+    grid-gap: 0;    
+    border: 1px solid #ccc;
+    padding: 5px;
+    
+}
+
+.gridPower strong {
+    margin: 0;
+    padding: 5px;
+    grid-area: "st";
+    border: 1px solid #ccc;
+}
+
+.gridPower p {
+    margin: 0;
+    padding: 5px;
+    grid-area: "p";
+    border: 1px solid #ccc;
+}

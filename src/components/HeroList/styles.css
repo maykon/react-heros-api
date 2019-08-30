@@ -1,0 +1,28 @@
+.heroList {
+    display: flex;
+    flex-flow: column;    
+    min-width: 900px;
+}
+
+.heroList input[type=text]{
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold; 
+    font-size: 20px;
+}
+
+.heroList div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.heroList .pagination div {
+    flex: 1;
+}
+.heroList .pagination span,
+.heroList .pagination button {
+    color: white;
+}
+
+

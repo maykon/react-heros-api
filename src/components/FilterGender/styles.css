@@ -1,0 +1,14 @@
+.filterGender {
+    flex-flow: row nowrap;
+    margin: 5px;
+    padding: 5px;
+}
+
+.filterGender strong {
+    flex-grow: 0;
+}
+.filterGender select {
+    flex: 1;
+    padding: 5px;
+    margin-left: 5px;
+}

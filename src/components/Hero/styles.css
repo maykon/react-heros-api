@@ -1,0 +1,17 @@
+.heroInfo,
+.heroInfo .heroHeader
+ {
+    display: flex;
+    flex-direction: column;
+    min-width: 900px;
+}
+
+.heroInfo .heroHeader {
+    justify-content: center;
+    
+    align-items: center;
+}
+
+.heroInfo .heroHeader img {
+    width: fit-content;
+}

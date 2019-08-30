@@ -1,0 +1,55 @@
+.heroList .gridItem {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;    
+    flex: 1;
+    flex-basis: 350px;
+    flex-grow: 0;
+}
+
+.heroList .gridItem a {
+    display: flex;
+    justify-content: center;
+}
+
+.heroList .gridItem h1{
+    margin: 0;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.heroList .gridItem p {
+    text-align: center;
+}
+
+.heroList div small {
+    display: flex;
+    justify-content: center;
+}
+
+.heroList .gridItem {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    grid-template-areas: "img"
+                         "super"
+                         "name"
+                         "ocup";   
+    grid-gap: 0;
+}
+
+.heroList .gridItem img {
+    grid-area: "img";
+}
+
+.heroList .gridItem h1 {
+    grid-area: "super";
+}
+
+.heroList .gridItem p {
+    grid-area: "name";
+}
+
+.heroList .gridItem small {
+    grid-area: "ocup";
+}

@@ -45,12 +45,6 @@ export default function HeroList() {
     setPage(0);
   };
 
-  const clearFilters = () => {
-    clearPageFilter();
-    setFilterHeros("");
-    setFilterGender("");
-  };
-
   const handleFilterHeros = hero => {
     clearPageFilter();
     setFilterHeros(hero);
@@ -76,7 +70,6 @@ export default function HeroList() {
     <div className="heroList">
       <SearchInput search={filterHeros} onChange={handleFilterHeros} />
       <FilterGender gender={filterGender} onChange={handleFilterGender} />
-      <button type="button" onClick={clearFilters} />
       {pagination.length && (
         <div className="pagination">
           <Pagination
